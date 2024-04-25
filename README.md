@@ -122,7 +122,7 @@ Ex:
  public class guitar {
  
   private String type;
-    private static int guitarCount = 0;
+  private static int guitarCount = 0;
   
   public guitar(){
     System.out.println("Strumming")
@@ -132,4 +132,65 @@ Ex:
     guitarCount++; <----------_now it will keep incrementing each time the guitar Constructor runs because the guitarCount is static and won't be set to 0._
     
   }
+
+  **Static variables a re shared. All instancces of the same class share a single copy of the static variables
+  Instance variable: 1 per Instance
+  Static bariables: 1 per class
+
+  -All static variables in a class are intialized before any object of that class can be created
+  EX:
+
+public  static void main (String[] args) {
+  System.out.println(Guitar.guitarCount);
+  Guitar guitar1 = new Guitar;
+  System.out.println(Guitar.guitarCount);
+
+}
+
+  - static final variables are constants
+  - Constant variable names should be in all caps
+  - Final variables don't change
+
+  Ex:
+   public class guitar {
+ 
+  private String type;
+  private static int guitarCount = 0;
+  public static final int STRINGS = 6;
+  ^Guitar ALWAYS has six strings
+  ------------------------------------------------------------------
+  # Math Methods
   
+  - Math.random()
+  - Math.abs()
+  - Math.round()
+  - Math.min()
+  - Math.max()
+
+---------------------------------------------------------------------
+# Number Formatting
+
+String s = String.format("%,d",1000000000)
+**%[argument number][flags][width][.precision] type**
+("%,5.1f",42.000)
+-You must include a type in your format instructions, and if you specify things besides type, type must always come last.
+
+# Key Calendar Methods
+- add(int field, int amound)
+- get(int field)
+- getInstance()
+- getTimeInMillis()
+- roll(int field, boolean up)
+- set(int field, int value)
+- set(year, month,day,hour,minute)
+- setTimeInMillies(long millis)
+
+  # Key Calendar Fields
+YEAR: The field indicating the year.
+MONTH: The field indicating the month.
+DAY_OF_MONTH: The field indicating the day of the month.
+DATE: Synonym for DAY_OF_MONTH.
+HOUR: The field indicating the hour of the day.
+MINUTE: The field indicating the minute within the hour.
+SECOND: The field indicating the second within the minute.
+MILLISECOND: The field indicating the millisecond within the second.
