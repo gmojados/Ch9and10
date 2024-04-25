@@ -186,11 +186,11 @@ String s = String.format("%,d",1000000000)
 - setTimeInMillies(long millis)
 
   # Key Calendar Fields
-YEAR: The field indicating the year.
-MONTH: The field indicating the month.
-DAY_OF_MONTH: The field indicating the day of the month.
-DATE: Synonym for DAY_OF_MONTH.
-HOUR: The field indicating the hour of the day.
-MINUTE: The field indicating the minute within the hour.
-SECOND: The field indicating the second within the minute.
-MILLISECOND: The field indicating the millisecond within the second.
+- YEAR: The field indicating the year.
+- MONTH: The field indicating the month.
+- DAY_OF_MONTH: The field indicating the day of the month.
+- DATE: Synonym for DAY_OF_MONTH.
+- HOUR: The field indicating the hour of the day.
+- MINUTE: The field indicating the minute within the hour.
+- SECOND: The field indicating the second within the minute.
+-  MILLISECOND: The field indicating the millisecond within the second.
